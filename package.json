@@ -1,0 +1,12 @@
+{
+  "name": "node-js-playlist",
+  "version": "1.0.0",
+  "description": "A test app",
+  "main": "app.js",
+  "repository": "https://github.com/hikurangi/node-js-playlist.git",
+  "author": "hikurangi <hikurangi@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
