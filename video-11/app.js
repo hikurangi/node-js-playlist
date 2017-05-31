@@ -8,11 +8,4 @@ const server = http.createServer((req, res) => {
 })
 
 server.listen(port, '127.0.0.1')
-
 console.log(`Server now listening on port ${port}`);
-
-// write script which checks the result of grep -q Microsoft /proc/version
-// true = WSL
-// false = native Linux
-
-// launch server using explorer.exe `http://localhost:${port}`
