@@ -17,12 +17,3 @@ const server = http.createServer((req, res) => {
 
 server.listen(port, '127.0.0.1')
 console.log(`Server now listening on port ${port}`);
-
-// // no pipe
-// myReadStream.on('data', chunk => {
-//   console.log('new chunk received');
-//   myWriteStream.write(chunk)
-// })
-
-// // mit pipe
-// myReadStream.pipe(myWriteStream)
