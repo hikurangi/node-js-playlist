@@ -3,3 +3,5 @@ const counter = arr => {
 }
 
 console.log(counter(['this one', 'another one', 'the most recent one']));
+
+module.exports = counter
