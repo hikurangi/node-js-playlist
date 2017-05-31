@@ -1,6 +1,11 @@
 const fs = require('fs')
 
-let readMe = fs.readFileSync('readme.txt', 'utf-8')
+// // Synchronous
+// let readMe = fs.readFileSync('readme.txt', 'utf-8')
 // console.log({readMe});
-fs.writeFileSync('writeme.txt', readMe)
-// code
+// fs.writeFileSync('writeme.txt', readMe)
+
+// // Async
+fs.readFile('readme.txt', 'utf-8', (err, data) => {
+  console.log({data});
+})
