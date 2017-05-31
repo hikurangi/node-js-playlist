@@ -18,6 +18,13 @@ p {
 }
 
 form {
-  display: flex;
-  flex-wrap: wrap;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+form > input, form > label {
+  display: block;
+  padding: 5px;
+  margin: 10px;
 }
