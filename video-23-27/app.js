@@ -8,11 +8,11 @@ app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, '/views'))
 
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/index.html') // express knows what to set in the headers
+  res.render('index') // express knows what to set in the headers
 })
 
 app.get('/contact', (req, res) => {
-  res.sendFile(__dirname + '/contact.html') // express knows what to set in the headers
+  res.render('contact') // express knows what to set in the headers
 })
 
 app.get('/profile/:name', (req, res) => {
@@ -21,7 +21,7 @@ app.get('/profile/:name', (req, res) => {
 })
 
 app.get('*', (req, res) => { // catch all will catch only the exceptions if placed at the end of the route chain
-  res.sendFile(__dirname + '/404.html')
+  res.render('404')
 })
 
 app.listen(port)
