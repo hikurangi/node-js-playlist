@@ -6,10 +6,9 @@ const port = 3000
 
 const server = http.createServer((req, res) => {
   console.log(`request was made to ${req.url}`);
-  res.writeHead(200, { 'Content-Type': 'text/plain' })
-
+  res.writeHead(200, { 'Content-Type': 'text/html' }) // browser parses content accurately
   // Streams perform better, esp(?) with larger file sizes
-  const myReadStream = fs.createReadStream(__dirname + '/readme.txt', 'utf8')
+  const myReadStream = fs.createReadStream(__dirname + '/index.html', 'utf8')
   myReadStream.pipe(res)
 })
 
