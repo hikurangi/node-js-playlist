@@ -7,5 +7,7 @@ const fs = require('fs')
 
 // // Async
 fs.readFile('readme.txt', 'utf-8', (err, data) => {
-  console.log({data});
+  fs.writeFile('writeme.txt', data) // works but is naughty and deprecated
 })
+
+console.log('test');
